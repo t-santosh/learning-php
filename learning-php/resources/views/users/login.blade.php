@@ -3,8 +3,8 @@
 @include('includes.header')
 @section('content')
 <div class="container border p-5 my-3 text-darkgray">
-    <form action="{{ route('auth-page') }}" method="POST">
-        {{-- @if (count($errors) > 0)
+    <form action="{{ route('auth-page') }}" method="post">
+        @if (count($errors) > 0)
             <div class="alert alert-danger">
                 <ul>
                     @foreach ($errors as $error)
@@ -15,8 +15,8 @@
         @endif
 
         @if (Session::has('autherror'))
-            <p class="alert alert-info">{{ Session::get('autherror') }}</p>
-        @endif --}}
+            <p class="alert alert-danger">{{ Session::get('autherror') }}</p>
+        @endif
 
         @csrf
         <h3 class="text-center text-uppercase">Sign in</h3>
