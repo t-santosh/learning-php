@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,3 +22,13 @@ Route::get('/', function () {
 Route::get('/home', function(){
     return view('users/home');
 });
+=======
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [UserController::class, 'index'])->name('index-page');
+Route::get('/admin', [UserController::class, 'login'])->name('login-page');
+
+Route::post('/admin-dashboard', [UserController::class, 'auth'])->name('auth-page');
+>>>>>>> 8438bea5ee49e91ef9a28a45ca4e7dba2f81e2a3

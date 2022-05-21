@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="container">
   <div class="row" id="main-footer">
     <div class="col-2 hm-text footer">
@@ -40,4 +41,8 @@
   <div class="footer-copyright text-center py-3">© 2022 Copyright:
       <a href="https://extratech.com/"> Extratech</a>
     </div>
+=======
+<div class="text-center">
+    <small>Copyright &copy; All rights reserved</small>
+>>>>>>> 8438bea5ee49e91ef9a28a45ca4e7dba2f81e2a3
 </div>

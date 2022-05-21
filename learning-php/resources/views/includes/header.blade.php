@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="row top-header social">
 	<div class="container">
         <ul class="social-icons">
@@ -29,3 +30,8 @@
     </div>   
 </div>
 
+=======
+<div class="main-header">
+    <h1>Welcome to <strong>Connect</a></strong></h1>
+</div>
+>>>>>>> 8438bea5ee49e91ef9a28a45ca4e7dba2f81e2a3
