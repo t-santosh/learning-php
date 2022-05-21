@@ -1,6 +1,10 @@
 body{
     font-family: 'GTWalsheimPro',Helvetica,Arial,Lucida,sans-serif;
 }
+
+.row{
+    margin: 0;
+}
 .hm-text h1{
     font-family: 'GTWalsheimPro-Medium',Helvetica,Arial,Lucida,sans-serif;
     color: #ff9933!important;
@@ -26,6 +30,31 @@ p{
     word-wrap: break-word;
     line-height: 1.7em;
     font-weight: 500;
+}
+
+/* top header social css  */
+
+.top-header.social{ 
+    background-color: #f2f5fc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #383838;
+}
+.header.main-menu{
+    top: 40px;
+    position: fixed;
+    line-height: 23px;
+    font-weight: 500;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 1px 0 #d6d6d6;
+    z-index: 99999;
+
+}
+.social-icons{
+    margin-bottom: 0;
+    padding: 0 0 5px;
 }
 
 .fa {
@@ -57,24 +86,36 @@ p{
   color: white;
 }
 
-.social-container {
-    width: 400px;
-    margin: 40vh auto;
-    text-align: center;
+.logo img{
+    height: 60px;
+}
+.menus{
+    float: left;
+}
+.menus ul{
+    padding: 20px 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 li {
     display: inline-block;
     margin: 0.15em;
-    position: relative;
     font-size: 1.2em;
-
 }
+.menus ul li{
+    margin-right: 20px;
+}
+
 
 a {
     display: inline-block;
 }
 
+a:hover{
+    text-decoration: none;
+    opacity: 80%;
+}
 .row.about{ 
     padding: 20px 0;
     margin: 30px 0;
@@ -150,55 +191,20 @@ a {
 }
 
 .footer li{
-    color: #707070 !important;
+    color: #ffffff !important;
     font-size: 14px;
     display: list-item;
     margin-bottom: 0.5em;
 }
 footer{
-    background: #f2f5fc;
+    background: #E62496;
     padding: 60px 0 30px 0;
 }
-.top-header.social{ 
-    background-color: #f2f5fc;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    font-size: 15px;
-    color: #383838;
-    transition: background-color 0.4s, transform 0.4s, opacity 0.4s ease-in-out, -webkit-transform 0.4s;
-}
-.header.main-menu{
-    top: 58px;
-    position: fixed;
-    line-height: 23px;
-    font-weight: 500;
-    background-color: #fff;
-    width: 100%;
-    -webkit-box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
-    transition: background-color 0.4s, color 0.4s, transform 0.4s, opacity 0.4s ease-in-out, -webkit-transform 0.4s;
-    z-index: 99999;
 
-}
-.logo{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-.logo img{
-    max-height: 80%;
-}
 
-.top-header .container{
-    width: 100%;
-    line-height: 1em;
-    padding-top: 0.75em;
-    font-weight: 600;
-}
 
 #main{
-    padding-top: 100px;
+    padding-top: 110px;
 }
 
 .container{

@@ -1,13 +1,19 @@
 @extends('layouts.master')
 @section('content')
 
+<div class="row big-screen" style="background-image: url('/images/bg1.jpeg'); background-repeat: no-repeat; height: 200px;">
+<div class="col-6">
+    <h2>This is a heading</h2>
+</div>
+ 
+</div>
 <div class="container">
     <!-- Slider section -->
     <div class="slideshow-container">
 
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img src="{{(URL::asset('/images/slide-1.jpeg'))}}" style="width:100%">
+            <img src="{{(URL::asset('/images/slide-1.jpeg'))}}" style="width:100%;">
             <div class="text">Caption Text</div>
         </div>
 
@@ -23,13 +29,18 @@
             <div class="text">Caption Three</div>
         </div>
 
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
     </div>
-        <br>
+    <br>
+
     <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
+
 
     <!-- About us Section -->
     <div class="row about">
