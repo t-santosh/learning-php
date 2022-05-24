@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Session;
 class UserController extends Controller
 {
     public function index(){
-        return view('users.index');
+        return view('users.landing');
     }
     public function login() {
         return view('users.login');
@@ -35,7 +35,7 @@ class UserController extends Controller
         
         if(!empty($user)) {
             if($user->password == $entered_password && $user->role == 'admin') {
-                return view('users.home');
+                return view('admin.dashboard');
             } else {
                 Session::flash('autherror', 'Incorrect Credentials');
                 return redirect()->route('login-page');

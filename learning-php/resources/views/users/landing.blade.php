@@ -1,16 +1,15 @@
-<<<<<<< HEAD
 @extends('layouts.master')
 @section('content')
 
-<div class="row big-screen" style="background-image: url('/images/bg1.jpeg'); background-repeat: no-repeat; height: 200px;">
+<div class="row big-screen" style="background-image: url('/images/img.jpeg'); background-repeat: no-repeat; height: 500px; background-size: cover;">
 <div class="col-6">
-    <h2>This is a heading</h2>
+    <!-- <h2>This is a heading</h2> -->
 </div>
  
 </div>
 <div class="container">
     <!-- Slider section -->
-    <div class="slideshow-container">
+    <!-- <div class="slideshow-container">
 
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
@@ -40,7 +39,7 @@
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
+    </div> -->
 
 
     <!-- About us Section -->
@@ -67,7 +66,7 @@
             <div class="card">
                 <div class="container">
                     <img src="{{(URL::asset('/images/service-1.png'))}}">
-                    <h4><b>John Doe</b></h4>
+                    <h4><b>Loreum Ipsum</b></h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing que temporaipsum. Atque temporaipsum dolor sit amet consectetur adipisicing elit. Atque temporaipsum dolor sit amet consectetur adipisicing elit. Atque tempora architecto hic aut nam quas saepe placeat cumque ad enim? Adipisci, earum. Minus accusantium sint magni aspernatur tempore, quasi ex.</p>
                 </div>
             </div>
@@ -77,7 +76,7 @@
         <div class="card">
             <div class="container">
             <img src="{{(URL::asset('/images/service-1.png'))}}">
-            <h4><b>John Doe</b></h4>
+            <h4><b>Loreum Ipsium</b></h4>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque tempora, adipisicing elit. Atque tempora, adipisicing elit. Atque tempora, architecto hic aut nam quas saepe placeat cumque ad enim? Adipisci, earum. Minus accusantium sint magni aspernatur tempore, quasi ipsum dolor sit amet consectetur adipisicing elit. Atque temporaex.</p>
             </div>
         </div>
@@ -92,11 +91,41 @@
             <h1>Industries</h1>
             <h2>For almost a decade, we have worked with the following industries</h2>
         </div>
-        <div class="col-4"></div>
+        <div class="col-4">
+
+        </div>
  
         <div class="row">
             <div class="col-8 colored hm-text">
-            <p>There will be slide show...</p>
+                <p>There will be slide show...</p>
+                <div class="row">
+                    <div class="col-4" style="padding: 10px 10px 0 0;">
+                        <div class="card" style="padding: 10px 10px 30px;">
+                            <div class="container">
+                                <img src="{{(URL::asset('/images/service-1.png'))}}">
+                                <h4><b>Loreum Ipsium</b></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4" style="padding: 10px 10px 0 0;">
+                        <div class="card" style="padding: 10px 10px 30px;">
+                            <div class="container">
+                                <img src="{{(URL::asset('/images/service-1.png'))}}">
+                                <h4><b>Loreum Ipsium</b></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4" style="padding: 10px 10px 0 0;">
+                        <div class="card" style="padding: 10px 10px 30px;">
+                            <div class="container">
+                                <img src="{{(URL::asset('/images/service-1.png'))}}">
+                                <h4><b>Loreum Ipsium</b></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
             </div>
             <div class="col-4 colored hm-text">
                 <p>Every industry has its own set of challenges, keeping that in mind, our engineers use the latest technologies to create purpose-built solutions and aptly tailor it to clients specific needs and requirements.</p>
@@ -119,9 +148,9 @@
                 <div class="card blog">
                     <img src="{{(URL::asset('/blogs/blog-1.webp'))}}">
                     <div class="container blog">
-                        <h1>New Initiatives to Learn Hands-on AWS Skills: AWS Cloud Quest & AWS Educate</h1>
-                        <h3>Posted Date</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque tempora, architecto hic aut nam quas saepe placeat cumque ad enim? Adipisci, earum. Minus accusantium sint magni aspernatur tempore, quasi ex.</p>
+                        <h1 class="post-title">New Initiatives to Learn Hands-on AWS Skills: AWS Cloud Quest & AWS Educate</h1>
+                        <h3 class="date">Posted Date</h3>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque tempora, architecto hic aut nam quas saepe placeat cumque ad enim? Adipisci, earum. Minus accusantium sint magni aspernatur tempore, quasi ex.</p>
                     </div>
                 </div>
             </div>
@@ -151,25 +180,3 @@
     </div>
 </div>
 @stop
-=======
-@extends('adminlte::page')
-
-@section('title', 'Dashboard')
-
-@section('content_header')
-    <h1>Dashboard</h1>
-@stop
-
-@section('content')
-    <p>Welcome to this beautiful admin panel.</p>
-    <p>Feel free to edit this dashboard</p>
-@stop
-
-@section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
-@stop
-
-@section('js')
-    <script> console.log('Hi!'); </script>
-@stop`
->>>>>>> 8438bea5ee49e91ef9a28a45ca4e7dba2f81e2a3
