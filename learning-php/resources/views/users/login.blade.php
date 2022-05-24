@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Sign-in')
+@include('includes.header')
 @section('content')
 <div class="container border p-5 my-3 text-darkgray">
     <form action="{{ route('auth-page') }}" method="post">
