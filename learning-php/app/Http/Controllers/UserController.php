@@ -17,7 +17,7 @@ class UserController extends Controller
 
     // lets start validating the admin credential inputs and redirect to the 
     // admin dashboard panel
-    public function auth(Request $request) {
+    public function auth_login(Request $request) {
 
         // perform the validation of admin inputs 
         $validation = $request->validate(
@@ -45,6 +45,10 @@ class UserController extends Controller
             return redirect()->route('login-page');
         }
 
+    }
+
+    public function register() {
+        return view('users.register');
     }
 
 }

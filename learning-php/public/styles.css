@@ -1,16 +1,5 @@
-
-.main-header{
-    background-color: #222222;
-    color: lightgray;
-    text-align: center;
-    padding: 3%;
-}
-
-.main-header strong{
-    color: lightblue;
-}
 .container {
-    width: 400px;
+    width: 50%;
 }
 
 

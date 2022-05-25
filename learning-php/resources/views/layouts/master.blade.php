@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  @include('includes.head')
-</head>
-<body>
-    <section>
-        @yield('content')
-    </section>
-    <footer>
-        @include('includes.footer')
-    </footer>
-
-</body>
-</html>
+@include('includes.header')
+@include('includes.navbar')
+@include('includes.sidebar')
+<section>            
+    @yield('content')
+</section>
+@include('includes.footer')
