@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Sign-in')
 @section('content')
-<div class="container border p-5 my-3 text-darkgray">
+<div class="container border p-5 mt-5 text-darkgray w-25">
     <form action="{{ route('auth-login') }}" method="post">
         @if (count($errors) > 0)
             <div class="alert alert-danger">

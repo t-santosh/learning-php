@@ -13,8 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('_users', function (Blueprint $table) {
-            $table->string('role');
+        Schema::create('posts', function (Blueprint $table) {
+            $table->id();
+            $table->string('post_title');
+            $table->string('post_description');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('_users', function (Blueprint $table) {
-            $table->dropColumn('role');
-        });
+        Schema::dropIfExists('posts');
     }
 };

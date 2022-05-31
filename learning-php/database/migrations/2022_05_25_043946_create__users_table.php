@@ -17,11 +17,12 @@ return new class extends Migration
             $table->id();
             $table->string('first_name');
             $table->string('last_name');
-            $table->date('date_of_birth');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('password');
-            $table->string('mobile')->unique();
-            $table->string('gender');
+            $table->string('address');
+            $table->string('city');
+            $table->string('state');
+            $table->string('zip');
             $table->timestamps();
         });
     }
