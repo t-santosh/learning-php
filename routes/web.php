@@ -21,4 +21,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [UserController::class, 'index'])->name('index-page');
 Route::get('/admin', [UserController::class, 'login'])->name('login-page');
 
-Route::post('/auth', [UserController::class, 'auth'])->name('auth-page');
+Route::post('/admin-dashboard', [UserController::class, 'auth'])->name('auth-page');

@@ -4,6 +4,9 @@
   @include('includes.head')
 </head>
 <body>
+    <header>
+        @include('includes.header')
+    </header>
     <section>
         @yield('content')
     </section>
